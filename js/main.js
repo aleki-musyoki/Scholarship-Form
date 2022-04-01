@@ -43,9 +43,3 @@ const button = document.getElementById("next")
 button.addEventListener("click", function(){
 	entries.every(input => input.reportValidity());
 })
-$('#contactForm').blur(function()
-{
-    if( !$(this).val() ) {
-          $(this).parents('p').addClass('warning');
-    }
-});
