@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Scholarship Form</title>
+  </head>
+  <body>
+  
+
+  <div class="content">
+    
+    <div class="container">
+      <div class="row align-items-stretch no-gutters contact-wrap">
+        <div class="col-md-4">
+          <div class="contact-info h-100">
+            <h3>Additional Information</h3>
+            <p class="mb-5">Under this section attach the relevant documents.</p>
+            <img src="../Scholarship Assignment/images/oaths-filled.png" alt="">
+          </div>
+        </div>
+
+        <div class="col-md-8">
+          <div class="form h-100">
+            
+           
+            <form class="mb-5" method="post" id="contactForm" name="contactForm">
+              <div class="progress" style="height: 2em; margin-top: -3.2em; margin-bottom: 2em; margin-left: -3em; width: 61em">
+                <div class="progress-bar" role="progressbar" style="width: 100%; background: #35477d" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <h2>5. Attach Documents & Oath</h2>
+              <p style="color:red">**Please fill in all fields in order to proceed.</p>
+
+              <h5>a. Attach Documents</h5>
+              <div class="row">
+                <div class="col-md-8 form-group mb-5">
+                  <label for="" class="col-form-label">Copy of High School Transcript</label>
+                  <input type="file" class="form-control" required name="name" id="name">
+                </div>
+                <div class="col-md-8 form-group mb-5">
+                  <label for="" class="col-form-label">Copy of Passport/ID</label>
+                  <input type="file" class="form-control" required name="name" id="name"  placeholder="e.g. Smith">
+                </div>
+                <div class="col-md-8 form-group mb-5">
+                  <label for="" class="col-form-label">Copy of Parent/Guardian Passport/ID</label>
+                  <input type="file" class="form-control" required name="name" id="name"  placeholder="e.g. Smith">
+                </div>
+                <div class="col-md-8 form-group mb-5">
+                  <label for="" class="col-form-label">Standardized test scores (AP/IB, SAT, TOEFL, etc.)</label>
+                  <input type="file" class="form-control" required multiple name="name" id="name"  placeholder="e.g. Doe">
+                </div>
+                <div class="col-md-8 form-group mb-5">
+                  <label for="" class="col-form-label">Other Relevant Documents (CV, Accomplishment certifictes, etc.)</label>
+                  <input type="file" class="form-control" multiple name="name" id="name"  placeholder="">
+                </div>
+              </div>
+
+              <h5>b. Oath and Affirmation</h5>
+              <div class="row">
+                <div class="col-md-12 form-group mb-5">
+                  <p>I affirm that this application has been
+                    completed voluntarily and the information provided and any additional documents submitted
+                    are accurate and true to the best of my knowledge. I agree to be contacted by the ATG Scholarship Organization(ATGSO)
+                    to provide further information about my application, if
+                    needed. I also hereby authorize ATGSO to contact the institution I attend/attended to verify or
+                    request any information necessary to aid in the determination of my scholarship eligibility. I
+                    give ATGSO the permission to provide, at the donors’ request, any official or unofficial
+                    documents to demonstrate my academic progress and status. If I am selected as a scholarship
+                    recipient, I understand that I must provide a thank you letter to the donor. I also understand
+                    that if I provide any false information, ATGSO reserves the right to pursue disciplinary or legal
+                    action and revoke my scholarship, if already awarded</p>
+                    <strong><p>By providing my signature (and/or parent's signature) I have read and agree with the notice above</p></strong>
+                </div>
+                <div class="col-md-6 form-group mb-5">
+                  <label for="" class="col-form-label">Attach Signature (signed on white background)</label>
+                  <input type="file" class="form-control" required name="street" id="street" placeholder="e.g. Troy Lane...">
+                </div>
+                <div class="col-md-6 form-group mb-5">
+                  <label for="" class="col-form-label">Date of signature</label>
+                  <input type="date" class="form-control"required name="town" id="town"  placeholder="e.g. Thika">
+                </div>
+                <div class="col-md-6 form-group mb-5">
+                  <label for="" class="col-form-label">Parent/Guardian Signature (if you are below 18 years old)</label>
+                  <input type="file" class="form-control" required name="town" id="town"  placeholder="e.g. Nairobi">
+                </div>
+                <div class="col-md-6 form-group mb-5">
+                  <label for="" class="col-form-label">Date of Signature</label>
+                  <input type="date" class="form-control" required name="town" id="town"  placeholder="e.g. 00100">
+                </div>
+              </div>
+
+
+
+              <div style="float: left;" class="row">
+                <div style="margin-left: -2em" class="col-md-1 form-group mb-5">
+                    <button  onclick="window.location.href ='essays.html'"class="btn btn-primary rounded-0 py-2 px-4">Back</button>
+                </div>
+
+                <div style="margin-left: 3em" class="col-md-1 form-group mb-5">
+                    <button  id="next" onclick="window.location.href ='final.html'"class="btn btn-primary rounded-0 py-2 px-4">Submit</button>
+                </div>
+              </div>
+            </form>
+
+            <div id="form-message-warning mt-4"></div> 
+            <div id="form-message-success">
+              Your message was sent, thank you!
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+    
+    
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
+
+<!--
+<input type="submit" value="Next" class="btn btn-primary rounded-0 py-2 px-4">
+                  <span class="submitting"></span>
+
+
+<div class="row">
+  <div class="col-md-12 form-group mb-5">
+    <label for="message" class="col-form-label">Message *</label>
+    <textarea class="form-control" name="message" id="message" cols="30" rows="4"  placeholder="Write your message"></textarea>
+  </div>
+</div>
+
+<h5>Personal Information</h5>
+              <p>Select all that apply to you</p>
+              <div class="row check">
+                <div class="col-md-6 form-group mb-5">
+                  <input type="checkbox" class="form-control" name="street" id="street" placeholder="+254721..">
+                  <label for="" class="col-form-label">Street/Address</label>
+                </div>
+                <div class="col-md-6 form-group mb-5">
+                  <label for="" class="col-form-label">Town</label>
+                  <input type="text" class="form-control" name="town" id="town"  placeholder="e.g. London">
+                </div>
+                <div class="col-md-6 form-group mb-5">
+                  <label for="" class="col-form-label">County/City</label>
+                  <input type="text" class="form-control" name="town" id="town"  placeholder="e.g. London">
+                </div>
+                <div class="col-md-6 form-group mb-5">
+                  <label for="" class="col-form-label">Postal Code</label>
+                  <input type="text" class="form-control" name="town" id="town"  placeholder="e.g. 00100">
+                </div>
+                <div class="col-md-6 form-group mb-5">
+                  <label for="" class="col-form-label">Country</label>
+                  <input type="text" class="form-control" name="town" id="town"  placeholder="e.g. Kenya">
+                </div>
+              </div>
+
+ -->
